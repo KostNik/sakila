@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Actor urls",
+    "modelList": [
+      {
+        "type": "JSON",
+        "urlPath": "/rest/actors",
+        "description": "Get All actors"
+      },
+      {
+        "type": "JSON",
+        "urlPath": "/rest/actors/actor?id={value}",
+        "description": "GET/PUT Actor by id"
+      },
+      {
+        "type": "JSON",
+        "urlPath": "/rest/actors/actor?id={value}",
+        "description": "Create (POST) Actor"
+      },
+      {
+        "type": "JSON",
+        "urlPath": "/rest/actors/filter/fullName: firstName={value}; lastName={value}",
+        "description": "Get Actors by name"
+      },
+      {
+        "type": "JSON",
+        "urlPath": "/rest/actors/listgrid?page={page_number}&rows={rows_per_page}&sort=[firstName, lastName, id, lastUpdate]&order=[asc,desc]",
+        "description": "Get listGrid of Actors (sort and order aren't required)"
+      },
+      {
+        "type": "PAGE",
+        "urlPath": "/web/actors/all",
+        "description": "Get All actors"
+      },
+      {
+        "type": "PAGE",
+        "urlPath": "/web/actors/list",
+        "description": "Get All actors in pagination table"
+      },
+      {
+        "type": "PAGE",
+        "urlPath": "/web/actors/actor/{id}",
+        "description": "GET Actor by id"
+      }
+    ]
+  }
+]
